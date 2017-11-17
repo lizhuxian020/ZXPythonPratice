@@ -1,0 +1,3 @@
+2017-11-17 16:28:57,323 DEBUG what thr fuck
+2017-11-17 16:34:13,615 DEBUG what thr fuck
+2017-11-17 16:34:19,629 DEBUG what thr fuck
