@@ -45,7 +45,7 @@ def is_path(path, type):
     :param type: 'f' or 'd'
     :return: True or False
     """
-    if isinstance(path, str) and path.find('/') != -1:
+    if (isinstance(path, str) or isinstance(path, unicode)) and path.find('/') != -1:
         # 用/来分开, 判断list最后一个带'.'且不以'.'开头, 是否以'./'开头或者以'/'开头
         list_path = path.split('/')
         last_part = list_path[len(list_path)-1]
