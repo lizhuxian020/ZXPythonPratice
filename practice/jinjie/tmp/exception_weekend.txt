@@ -1,0 +1,8 @@
+2017-11-21 14:59:58,925 exception_weekend.py[line:29] DEBUG success to open: <open file './exception_weekend.txt', mode 'a' at 0x10e377270>
+2017-11-21 15:01:01,465 exception_weekend.py[line:29] DEBUG success to open: ./exception_weekend.txt
+2017-11-21 15:01:18,251 exception_weekend.py[line:29] DEBUG success to open: ./exception_weekend
+2017-11-21 15:02:42,407 exception_weekend.py[line:26] ERROR fail to open: ./exception_weekend/asd.t, 
+ERROR: [Errno 20] Not a directory: './exception_weekend/asd.t'
+2017-11-21 15:03:30,784 exception_weekend.py[line:26] ERROR fail to open: ./exception_weekend/asd.t, 
+ERROR: [Errno 20] Not a directory: './exception_weekend/asd.t'
+2017-11-21 15:03:50,362 exception_weekend.py[line:29] DEBUG success to open: ./exception_weekend.txt

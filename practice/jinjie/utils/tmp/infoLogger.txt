@@ -1,0 +1,36 @@
+2017-11-21 14:19:47,898 ERROR how r y
+2017-11-21 14:21:48,155 WARNING warnmessage
+2017-11-21 14:21:48,156 ERROR errormessage
+2017-11-21 14:21:48,156 CRITICAL criticalmessage
+2017-11-21 14:22:02,117 WARNING warnmessage
+2017-11-21 14:22:02,118 ERROR errormessage
+2017-11-21 14:22:02,118 CRITICAL criticalmessage
+2017-11-21 14:27:55,321 log_tools.py[line:42] WARNING warnmessage
+2017-11-21 14:27:55,323 log_tools.py[line:44] ERROR errormessage
+2017-11-21 14:27:55,324 log_tools.py[line:46] CRITICAL criticalmessage
+2017-11-21 14:33:37,430 log_tools.py[line:42] WARNING warnmessage
+2017-11-21 14:33:37,431 log_tools.py[line:44] ERROR errormessage
+2017-11-21 14:33:37,431 log_tools.py[line:46] CRITICAL criticalmessage
+2017-11-21 14:33:59,549 log_tools.py[line:44] WARNING warnmessage
+2017-11-21 14:33:59,550 log_tools.py[line:46] ERROR errormessage
+2017-11-21 14:33:59,550 log_tools.py[line:48] CRITICAL criticalmessage
+2017-11-21 14:34:02,790 log_tools.py[line:44] WARNING warnmessage
+2017-11-21 14:34:02,790 log_tools.py[line:46] ERROR errormessage
+2017-11-21 14:34:02,790 log_tools.py[line:48] CRITICAL criticalmessage
+2017-11-21 14:34:08,500 log_tools.py[line:44] WARNING warnmessage
+2017-11-21 14:34:08,501 log_tools.py[line:46] ERROR errormessage
+2017-11-21 14:34:08,501 log_tools.py[line:48] CRITICAL criticalmessage
+2017-11-21 14:34:22,414 log_tools.py[line:46] ERROR errormessage
+2017-11-21 14:34:22,415 log_tools.py[line:48] CRITICAL criticalmessage
+2017-11-21 14:34:27,155 log_tools.py[line:46] ERROR errormessage
+2017-11-21 14:34:27,156 log_tools.py[line:48] CRITICAL criticalmessage
+2017-11-21 14:45:55,701 log_tools.py[line:42] DEBUG debugmessage
+2017-11-21 14:45:55,701 log_tools.py[line:44] INFO infomessage
+2017-11-21 14:45:55,701 log_tools.py[line:46] WARNING warnmessage
+2017-11-21 14:45:55,701 log_tools.py[line:48] ERROR errormessage
+2017-11-21 14:45:55,701 log_tools.py[line:50] CRITICAL criticalmessage
+2017-11-21 14:59:51,860 log_tools.py[line:59] DEBUG debugmessage
+2017-11-21 14:59:51,861 log_tools.py[line:61] INFO infomessage
+2017-11-21 14:59:51,861 log_tools.py[line:63] WARNING warnmessage
+2017-11-21 14:59:51,861 log_tools.py[line:65] ERROR errormessage
+2017-11-21 14:59:51,862 log_tools.py[line:67] CRITICAL criticalmessage

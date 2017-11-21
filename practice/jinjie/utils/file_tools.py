@@ -24,7 +24,11 @@ def make_sure_path(path, type):
         if type == 'f':
             if is_path(path, type):
                 # 创建空白文件
-                write_file(path, '')
+                path_list = path.split('/')
+                dir_path = '/'.join(path_list[:len(path_list)-1])
+                print dir_path
+                if make_sure_path(dir_path, 'd'):
+                    write_file(path, '')
             else:
                 print 'path: %s is not a file path' % path
         elif type == 'd':
@@ -32,7 +36,8 @@ def make_sure_path(path, type):
                 os.makedirs(path)
             else:
                 print 'path: %s is not a dir path' % path
-    except:
+    except Exception, ex:
+        print ex
         return False
     else:
         return True
