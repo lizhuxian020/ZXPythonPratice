@@ -10,37 +10,46 @@ import time
 
 account = 500
 
+mlock = threading.Lock()
+
+print dir(mlock)
 
 def fuc():
     global account
-    for i in range(0, 100):
+    mlock.acquire()
+    for i in xrange(0, 100):
+
         account += 1
+    mlock.release()
     pass
 
-# th_list = []
-
-# for i in range(0, 10):
-#     th = threading.Thread(target=fuc)
-#     th_list.append(th)
-#
-# before_time = time.time()
-# for th in th_list:
-#     th.start()
-#
-# for th in th_list:
-#     th.join()
-#
-# print time.time() - before_time
-#
-# print
+th_list = []
 
 before_time = time.time()
-for x in range(10):
-    fuc()
 
+for i in range(0, 10):
+    th = threading.Thread(target=fuc)
+    th_list.append(th)
+    th.start()
+#
 
-print time.time() - before_time
+# for th in th_list:
+#     th.start()
+
+for th in th_list:
+    th.join()
+#
+
+#
 print account
+print time.time() - before_time
+# before_time = time.time()
+# for x in range(10):
+#     fuc()
+#
+#
+# print time.time() - before_time
+# print account
 #
 # 用多线程的方式来解决，提示需要用到这节课的内容
 #
