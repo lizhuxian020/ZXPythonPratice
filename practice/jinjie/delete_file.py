@@ -35,4 +35,4 @@ def delete_file(dirpath, containname):
 
 if __name__ == '__main__':
 
-    delete_file('./grade_2', 'pic')
+    delete_file('/Users/lzx/Desktop/WXRes/grade_4', 'pic')

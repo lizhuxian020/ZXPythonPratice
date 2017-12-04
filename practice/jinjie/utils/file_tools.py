@@ -91,6 +91,52 @@ def log(filename, content):
     content = '%s   %s' % (time.get_time(), content)
     write_file(filename, content)
 
+
+def iterate_file_of_dirpath(dirpath, callback):
+    """
+    delete file which name contain specify string thought dir_path
+    :param dirpath: direction path
+    :param containname: specify string
+    :return:
+    """
+    if os.path.isdir(dirpath):
+        for x in os.listdir(dirpath):
+            fullfile = os.path.join(dirpath, x)
+            if os.path.isfile(fullfile):
+                callback(fullfile)
+            else:
+                iterate_file_of_dirpath(fullfile, callback)
+    pass
+
+
+def delete_file(dir_path, contain_name, logger):
+    """
+    delete file which name contain specify string thought dir_path
+    :param dir_path: direction path
+    :param contain_name: specify string
+    :param logger: specify logger
+    :return:
+    """
+    if not isinstance(dir_path, str):
+        return False
+    if os.path.isdir(dir_path):
+        for x in os.listdir(dir_path):
+            full_file = os.path.join(dir_path, x)
+            if os.path.isfile(full_file):
+                if contain_name in os.path.basename(full_file):
+                    try:
+                        os.remove(full_file)
+                    except Exception, ex:
+                        logger.error(ex)
+                    else:
+                        logger.debug('success delete: %s' % full_file)
+            else:
+                delete_file(full_file, contain_name)
+    else:
+        print 'param: %s is not direction or not exist' % repr(dir_path)
+
+    pass
+
 if __name__ == '__main__':
     #
     # filepath = './logCache/'

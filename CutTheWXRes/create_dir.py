@@ -2,13 +2,14 @@
 # Author: lee_zix
 
 from utils.file_tools import make_sure_path
+import os
 
-root_dir = './WXRes/'
+root_dir = '/Users/lzx/Desktop/WXRes/'
 
 def create_dir():
     for x in range(1, 7):
         for y in range(1, 13):
-            path = root_dir + 'grade_%d/' % x + 'unit_%d' % y
+            path = os.path.join(root_dir, 'grade_%d/' % x + 'unit_%d' % y)
             if make_sure_path(path, 'd'):
                 print 'success'
             else:
