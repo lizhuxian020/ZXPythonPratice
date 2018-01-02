@@ -8,7 +8,7 @@ from utils.file_tools import make_sure_path
 url = 'http://op.feiwan.net/manhua/890.html?page=%d' % 2
 img_url = 'http://img.feiwan.net/op/manhua/%d/%d.png'
 
-collect = 890
+collect = 889
 
 # url_obj = urllib.urlopen("http://www.baiduasd.com")
 
